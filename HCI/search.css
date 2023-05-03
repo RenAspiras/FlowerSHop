@@ -1,0 +1,113 @@
+*{
+
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 80%;
+    margin: 0% auto;
+    background-image: url(newbghomepage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%100%;
+}
+
+.nav-container{
+    border-radius: 25px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.right-side, .left-side{
+    list-style-type: none;
+    font-family: cursive;
+}
+.right-side li,.left-side li{
+    display: inline-block;
+}
+.right-side li a,.left-side li a{
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   height:100% ;
+   font-size: 20px;
+   color: #333;
+   padding: 14px 16px ;
+   font-weight: bold;
+}
+.right-side li a:hover,.left-side li a:hover{
+  background-color: rgb(47, 189, 8);
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blue(20px);
+}
+
+.main {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 100px;
+    row-gap: 100px;
+}
+img {
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    object-position: center;
+}
+.items{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    font-family: cursive;
+    
+    
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+border-style: outset;
+    border-radius: 20%;
+    border-width: 15px;
+    
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
